@@ -1,13 +1,21 @@
-const title = document.getElementById("title");
+function changeText()
+{
+ const message = document.getElementById("message");
+ message.textContent= "The text has been changed!";
+ 
+}
 
-const message = document.querySelector("#message");
+function changeStyle()
+{ 
+ const title = document.querySelector("#maintitle");
+ title.textContent= "DOM Manipulation in Action!";
+ title.style.color="red";
+ title.style.fontsize="36px";
 
-const card = document.querySelector(".card");
+}
 
-title.textContent = "Updated Title";
-
-message.textContent = "The text was changed using JavaScript.";
-
-card.style.color = "blue";
-
-card.classList.add("active");
+function activateBox()
+{ 
+ const box = document.getElementById("box");
+ box.classList.add("active");
+}
